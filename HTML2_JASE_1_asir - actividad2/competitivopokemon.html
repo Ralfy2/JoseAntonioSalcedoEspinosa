@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ES">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
+<title>competitivo_pokemon</title>
+<script src="scripts.js"></script>
+
+</head>
+<body style="background-color: thistle;">
+    <header style="text-align: center;">
+    
+        <h1 style="font-size: 75px; color: black;">¿Así que quieres iniciarte en el competitivo de Pokémon? <br><strong>¡Entonces estas en el sitio correcto!</strong></h1>
+       
+        <button
+        style="font-size: 45px; color: blueviolet; border: none; background: none;"
+        onclick="return escondinabo('ocultable')" type="button"><strong>¡Hazte con todos!</strong>
+        </button>
+    </header>
+    <div style="align-self: start; display: none;" class="iniciador" id="ocultable">
+        <div style="margin-left: 5%; width: 45%;float: left;">
+        <h1>Competitivo VGC de Pokémon</h1>
+    <p>El competitivo VGC (Video Game Championships) de Pokémon es una de las formas más populares de competición en el mundo de Pokémon. En este formato, los jugadores se enfrentan en batallas dobles,<br/> lo que añade una capa extra de estrategia y colaboración entre los Pokémon. A continuación, se detallan algunos aspectos clave:</p>
+
+    <h2>1. Reglas y formato</h2>
+    <ul>
+        <li><strong>Batallas dobles:</strong> Cada jugador usa un equipo de seis Pokémon, eligiendo cuatro para cada batalla.</li>
+        <li><strong>Restricciones:</strong> En cada temporada, hay restricciones sobre qué Pokémon se pueden usar, limitando a ciertos legendarios o a los Pokémon disponibles en un juego específico.</li>
+        <li><strong>Objetos:</strong> Los Pokémon pueden llevar objetos que les otorgan ventajas, como mejoras a sus estadísticas o curaciones.</li>
+    </ul>
+
+    <h2>2. Estrategia</h2>
+    <ul>
+        <li><strong>Sinergia de equipo:</strong> Es crucial que los Pokémon de un equipo se complementen entre sí, maximizando sus fortalezas y cubriendo debilidades.</li>
+        <li><strong>Roles de Pokémon:</strong> Cada Pokémon puede desempeñar diferentes roles, como atacante físico, atacante especial, tanque o soporte.</li>
+        <li><strong>Movimientos y habilidades:</strong> La elección de movimientos y habilidades es fundamental, ya que algunos pueden afectar a ambos Pokémon en el campo.</li>
+    </ul>
+
+    <h2>3. Meta y adaptaciones</h2>
+    <ul>
+        <li><strong>Meta-juego:</strong> El meta cambia con el tiempo, y estar al tanto de estas tendencias es vital para el éxito.</li>
+        <li><strong>Adaptaciones:</strong> Los jugadores ajustan sus equipos y estrategias basándose en el meta y en experiencias previas.</li>
+    </ul>
+
+    <h2>4. Eventos y competiciones</h2>
+    <ul>
+        <li><strong>Torneos locales y regionales:</strong> Hay muchos eventos, desde torneos locales hasta campeonatos mundiales.</li>
+        <li><strong>Clasificatorias:</strong> Existen sistemas de clasificación en línea para acumular puntos y participar en eventos más grandes.</li>
+    </ul>
+
+    <h2>5. Comunidad</h2>
+    <p>La comunidad de VGC es activa y vibrante, con muchos jugadores compartiendo estrategias, equipos y análisis a través de foros, redes sociales y plataformas de streaming.</p>
+
+    <p>El competitivo VGC de Pokémon es un desafío estratégico y una forma de expresión creativa, donde los jugadores muestran su conocimiento y habilidades en el mundo de Pokémon.</p>
+        
+        
+            
+        </div>
+        <div style="float:left; width: 50%; margin-top: 15%;">
+            <p style="font-size: large;"><strong> Aquí os dejo un video donde se puede ver una de las finales mas recientes</strong>
+            </p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/wUQhwwcXHAM?si=-zlhdZ68oTHl59_6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div style="text-align: center;">
+            <button style="width: 100%; background: none; border: none;"><h1>¿Cuál es tu tipo favorito de Pokémon?</h1></button>
+            <form action="gracias_por_participar.html" method="post" style="width: 100%;">
+                <label>
+                    <input type="radio" name="tipo" value="agua" required> Agua
+                </label>
+                <label>
+                    <input type="radio" name="tipo" value="fuego"> Fuego
+                </label>
+                <label>
+                    <input type="radio" name="tipo" value="planta"> Planta
+                </label>
+                <label>
+                    <input type="radio" name="tipo" value="eléctrico"> Eléctrico
+                </label>
+                <label>
+                    <input type="radio" name="tipo" value="tierra"> Tierra
+                </label>
+                <label>
+                    <input type="radio" name="tipo" value="volador"> Volador
+                </label>
+                <label>
+                    <input type="radio" name="tipo" value="normal"> Normal
+                </label>
+                <label>
+                    <input type="radio" name="tipo" value="lucha"> Lucha
+                </label>
+                <label>
+                    <input type="radio" name="tipo" value="psíquico"> Psíquico
+                </label>
+                <label>
+                    <input type="radio" name="tipo" value="fantasma"> Fantasma
+                </label>
+                <label>
+                    <input type="radio" name="tipo" value="hielo"> Hielo
+                </label>
+                <label>
+                    <input type="radio" name="tipo" value="bicho"> Bicho
+                </label>
+                <label>
+                    <input type="radio" name="tipo" value="roca"> Roca
+                </label>
+                <label>
+                    <input type="radio" name="tipo" value="siniestro"> Siniestro
+                </label>
+                <label>
+                    <input type="radio" name="tipo" value="dragón"> Dragón
+                </label>
+                <label>
+                    <input type="radio" name="tipo" value="hada"> Hada <br/>
+                </label>
+                <input type="submit" value="Enviar" >
+            </form>
+        </div>
+
+
+    </div>
+
+   
+    <div style="text-align: center; margin-top: 25px;">
+        <Button class="inicio"
+            style="font-size: 30px; color: blueviolet; border: 2px; border: none; background: none; width: 100%;"
+            onclick="location.href='HTML actividad 1.html'">Volver a inicio 
+        </Button>
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>

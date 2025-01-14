@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ES">
+<head>
+<meta charset="utf-8">
+<title>EJERCICIO 2 HTML</title>
+<style>
+ 
+    #contenedor {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+#contenedor > div {
+  width: 50%;
+}
+
+body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            max-width: 400px; 
+            
+        }
+        label {
+            margin-bottom: 5px;
+        }
+        input {
+            margin-bottom: 15px;
+            padding: 8px;
+            font-size: 16px;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+
+</style>
+</head>
+<body style="background-color: thistle;">
+    
+
+<header style="text-align: center; margin-left: 10%; margin-right: 10%;">
+    
+    <h1 style="font-size: 100px;">Pokémon y Zenless Zone Zero Como RPG Competitivos</h1>
+    <h2 style="font-size: 70px;">Pokémon</h2>
+</header>
+<div class="pokemon" style="text-align: center;">
+    <button class="reproductor" style="background: none; border: none;">
+        <audio src="media/audio/pokemones.mp3" loop></audio>
+        <script>
+            let boton = document.querySelector(".reproductor")
+            let audioEtiqueta = document.querySelector("audio")
+
+            boton.addEventListener("click", () => {
+            audioEtiqueta.setAttribute("src", "media/audio/pokemones.mp3")
+            audioEtiqueta.play()
+            console.log(`Reproduciendo: ${audioEtiqueta.src}`)
+            })
+        </script>
+        <img src="https://i.kym-cdn.com/entries/icons/original/000/000/878/who_pokemon.0.jpg" alt="pokemon">
+       
+    
+    </button>
+
+   
+    <p style="font-size: 30px;">Pokémon es un RPG centrado en la creación de un equipo de Pokémon <br/>
+      en el cual se busca la cobertura de las debilidades y maximización de los puntos fuertes <br/>
+      para crear equipos que cubran sus debilidades entre sí, aumenten sus características <br/>
+      o produzcan sinergias que se puedan implementar en estrategias competitivas.
+    </p>
+</div>
+
+
+
+
+<div style="text-align: center;">
+    <button class="avance" 
+    style="font-size: 30px; color: blueviolet; border: 2px; background-color: rgb(183, 218, 131);"
+    onclick="location.href='competitivopokemon.html'">Competitivo de Pokemon</button>
+</div>
+<div style="text-align: center;">
+  <p style="margin-top: 50px;"><h2 style="font-size: 70px;">Zenless Zone Zero</h2></p>
+  <button class="reproductor" style="background: none; border: none;">
+    <audio src="media/audio/Gacha_Theme_OST__Voice_Rap__Male___Female__Full_Version_With_Lyrics__Zenless_Zone_Zero.mp3" loop></audio>
+    <script>
+        let boton1 = document.querySelector(".reproductor")
+        let audioEtiqueta1 = document.querySelector("audio")
+
+        boton1.addEventListener("click", () => {
+        audioEtiqueta1.setAttribute("src", "media/audio/Gacha_Theme_OST__Voice_Rap__Male___Female__Full_Version_With_Lyrics__Zenless_Zone_Zero.mp3")
+        audioEtiqueta1.play()
+        console.log(`Reproduciendo: ${audioEtiqueta.src}`)
+        })
+    </script>
+    <img src="https://twinfinite.net/wp-content/uploads/2022/09/Zenless-Zone-Zero.jpg" alt="Zenless Zone Zero">
+   
+
+</button>
+    
+        <div>
+          <p style="font-size: 30px;">
+            Zenless Zone Zero o ZZZ para abreviar es un Action RPG gratuito lanzado en Julio de 2024 <br/>
+            su jugabilidad se basa en creación de "equipos" compuestos por 3 "agentes" que el jugador <br/>
+            controla para terminar con los enemigos en el menor tiempo posible
+          </p>
+        </div>
+        <div style="text-align: center; margin-bottom: 300px;">
+          <button class="avance" 
+          style="font-size: 30px; color: blueviolet; border: 2px; background-color: rgb(183, 218, 131);"
+          onclick="location.href='competitivozzz.html'">Competitivo ZZZ</button>
+      </div>
+        
+        
+    
+
+</div>
+<footer style="width: 500px; margin-left: 40%;">
+  <h1>Formulario de Registro</h1>
+    <form action="gracias_por_inscribirte.html" method="POST">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="apellidos">Apellidos:</label>
+        <input type="text" id="apellidos" name="apellidos" required>
+
+        <label for="correo">Correo Electrónico:</label>
+        <input type="email" id="correo" name="correo" required>
+
+        <label for="fecha_nacimiento">Fecha de Nacimiento:</label>
+        <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required>
+
+        <label for="usuario">Nombre de Usuario:</label>
+        <input type="text" id="usuario" name="usuario" required>
+
+        <label for="contraseña">Contraseña:</label>
+        <input type="password" id="contraseña" name="contraseña" required>
+
+        <input type="submit" value="Registrarse">
+</footer>
+
+
+</body>
+</html>

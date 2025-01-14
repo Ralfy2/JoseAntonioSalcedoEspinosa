@@ -1,0 +1,24 @@
+ONG
+
+COLABORADORES*
+-COD*
+-Nombre
+-Numero_cuenta
+-cuota_menusal
+
+algunos solo pagan cuota mensual y otros además hacen:
+-Limpiadores (formación)
+-Periodistas (titulación)
+-Ayudantes (Cursos, sexo)
+-psicólogos (experiencia)
+
+Todos pueden (no obligatorio) Participar (ABONANDO OBLIGATORIAMENTE) en:
+
+PROYECTOS_DE_AYUDA
+-COD_PROYECTO*
+-DESCRIPCIÓN
+-PAÍS
+-CANTIDAD ADICIONAL
+
+CUOTA
+
